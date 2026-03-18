@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Dhineshkumar.L
+* **Register Number**: 212224230066
+* **Date of Submission**: 18.03.2026
 
 ---
 
@@ -82,13 +82,12 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+1. First, a security group named DB Security Group was created to allow the web server to connect to the database using port 3306 (MySQL).
+2. A DB Subnet Group was created with subnets from two Availability Zones to allow the database to run in a Multi-AZ environment for high availability.
+3. A MySQL RDS instance named lab-db was created with the database name lab, username main, and password lab-password.
+4. The database was associated with the DB Security Group and the Lab VPC so that the web server can securely connect to the database.
+5. The web application running on the EC2 server was opened using its IP address, and the RDS endpoint, database name, username, and password were entered to interact with the database.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
 
 ---
 
@@ -96,19 +95,28 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ### Screenshot 1: EC2 Instance for Database Server
 
-(Insert Screenshot Here)
+
+
+<img width="1918" height="1090" alt="Screenshot 2026-02-28 190355" src="https://github.com/user-attachments/assets/d9618685-96e9-4b9f-9d47-7b009bfff90a" />
+
 
 ---
 
 ### Screenshot 2: Database Service Running
 
-(Insert Screenshot Here)
+
+
+<img width="1917" height="1093" alt="Screenshot 2026-02-28 191959" src="https://github.com/user-attachments/assets/d1910203-646e-4ef3-a45e-34ae17416895" />
+
 
 ---
 
 ### Screenshot 3: Sample Database and Table
 
-(Insert Screenshot Here)
+
+
+<img width="1911" height="1136" alt="Screenshot 2026-02-28 193523" src="https://github.com/user-attachments/assets/b9419f41-34ec-4456-b729-a2430bf09ddb" />
+
 
 ---
 
